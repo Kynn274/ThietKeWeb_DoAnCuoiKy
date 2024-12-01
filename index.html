@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -12,24 +13,69 @@
 </head>
 <body>
     <header>
-        <img src="./assets/images/duc_phat_logo.png" alt="Duc Phat Bakery">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="./assets/images/duc_phat_logo1.png" alt="Duc Phat Bakery" class="logo">
+                <a class="navbar-brand text-center" href="#"><span class="fw-bold fs-4 text-danger">Duc Phat</span> <br><span class="fs-4 text-dark fw-bold">Bakery</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-underline">
+                  <li class="nav-item">
+                    <a class="nav-link active text-dark fw-bold" href="#">Trang Chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#">Giới Thiệu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#">Sản Phẩm</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#">Cửa Hàng</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="#">Liên Hệ</a>
+                  </li>
+                </ul>
+                
+              </div>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+            </div>
+          </nav>
+          <div class="main-content bg-danger py-3 d-flex flex-row align-items-center justify-content-between">
+            <div class="main-content-text" style="margin-left: 100px; max-width: 50%;">
+                <h1 class="text-center text-light">Welcome to Duc Phat Bakery</h1>
+                <p class="text-center text-light">Được thành lập từ năm 1990, Duc Phat Bakery tự hào mang đến những sản phẩm bánh mì chất lượng cao, đậm đà hương vị truyền thống Việt Nam.</p>
+                <p class="text-center text-light">Chúng tôi cam kết sử dụng nguyên liệu tươi ngon nhất để tạo nên những ổ bánh mì giòn rụm, hấp dẫn mọi khách hàng.</p>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide my-3 me-5" data-bs-ride="carousel" style="height: 300px;">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/bakery_shop.jpg" class="d-block my-0" alt="Cửa hàng Duc Phat Bakery">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/fresh_bread.jpg" class="d-block my-0" alt="Bánh mì tươi ngon" style="margin-top: 20px;">
+                  </div>
+                </div>
+              </div>
+        </div>
     </header>
-
-    <nav>
+    <div class="container">
+        
+    </div>
+    <!-- <nav>
         <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
         <a class="nav-link" href="#">Giới Thiệu</a>
         <a class="nav-link" href="#">Sản Phẩm</a>
         <a class="nav-link" href="#">Cửa Hàng</a>
         <a class="nav-link" href="#">Liên Hệ</a>
-    </nav>
+    </nav> -->
 
-    <div class="main-content">
-        <h1>Chào mừng đến với Duc Phat Bakery</h1>
-        <p>Được thành lập từ năm 1990, Duc Phat Bakery tự hào mang đến những sản phẩm bánh mì chất lượng cao, đậm đà hương vị truyền thống Việt Nam.</p>
-        <p>Chúng tôi cam kết sử dụng nguyên liệu tươi ngon nhất để tạo nên những ổ bánh mì giòn rụm, hấp dẫn mọi khách hàng.</p>
-        <img src="./assets/images/bakery_shop.jpg" alt="Cửa hàng Duc Phat Bakery">
-        <img src="./assets/images/fresh_bread.jpg" alt="Bánh mì tươi ngon" style="margin-top: 20px;">
-    </div>
+    
     <footer>
         <p>© 2024 Duc Phat Bakery. All rights reserved.</p>
         <p>Hotline: 0909-XXX-XXX | Email: contact@ducphatbakery.vn</p>
