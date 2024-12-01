@@ -7,6 +7,10 @@
 }
 */
 .main-content {
+    background-image: url(../images/bakery_shop.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode:hard-light;
     text-align: center;
     padding: 40px 20px;
 }
@@ -26,7 +30,6 @@
     width: auto;
     border-radius: 10px;
 }
-
 footer {
     background-color: #f8f8f8;
     text-align: center;
@@ -47,4 +50,7 @@ footer p {
     margin: 0 10px;
     
 }
+@media (max-width: 992px) {
 
+    
+}
