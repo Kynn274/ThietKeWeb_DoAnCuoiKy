@@ -1,0 +1,189 @@
+/* Hiệu ứng cho toàn trang */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease-in-out;
+}
+
+body:hover {
+    background-color: #f3f3f3;
+}
+
+/* Hiệu ứng tiêu đề */
+.header {
+    background: linear-gradient(90deg, #ffcccb, #ffd9a9);
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.header:hover {
+    background-color: #ffe5d8;
+}
+
+/* Hiệu ứng danh sách sản phẩm */
+.product-list ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-card {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+/* Hiệu ứng cho biểu mẫu đánh giá */
+.review-form {
+    margin-top: 30px;
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.review-form:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.review-form label,
+.review-form textarea,
+.review-form input,
+.review-form select,
+.review-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.review-form textarea:focus,
+.review-form input:focus,
+.review-form select:focus {
+    background-color: #f0fff0;
+    transform: scale(1.02);
+    outline: none;
+    border-color: #66b2b2;
+}
+
+.review-form button {
+    background-color: #ffcccb;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-form button:hover {
+    background-color: #ff9999;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hiệu ứng footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.footer:hover {
+    background-color: #444;
+}
+/* Xếp hạng sao */
+.star-rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.star {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.star:hover,
+.star.active {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
+
+.star-rating:hover .star {
+    color: #ffcc00;
+}
+/* Trạng thái nút bình thường (bị vô hiệu hóa) */
+#submitButton {
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Trạng thái nút khi có thể nhấn */
+#submitButton.enabled {
+    background-color: #db1616;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+/* Thông báo xác nhận */
+.confirmation {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #66cc66;
+    background-color: #eaffea;
+    color: #2d862d;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.confirmation.hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    visibility: hidden;
+}
+
+.confirmation.visible {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
