@@ -1,0 +1,164 @@
+/* Tổng quát */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cfcfcf; /* Màu nền xám nhạt */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa nội dung */
+}
+
+/* Thanh điều hướng */
+header {
+    background-color: #000; /* Nền đen */
+    color: #fff;
+    padding: 10px 15px;
+    width: 100%; /* Full chiều rộng */
+    box-shadow: 0px 4px 8px rgba(102, 101, 101, 0.532);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #f4f1f1;
+    cursor: pointer;
+}
+
+/* Nội dung chính */
+main {
+    width: 100%;
+    max-width: 3000px; /* Giới hạn chiều rộng */
+    margin: 25px auto;
+    padding: 0 25px;
+}
+
+.contact-card {
+    background-color: #f5f1f1; /* Nền trắng */
+    padding: 40px; /* Tăng padding */
+    border: 1px solid #6c6969;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Tăng chiều rộng thẻ */
+    margin: 0 auto; /* Căn giữa thẻ */
+    text-align: center;
+}
+
+.contact-card h2 {
+    background-color: #363535;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin: 0 -40px 20px; /* Kéo tiêu đề ra ngoài lề thẻ */
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    color: #333;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+}
+
+.contact-info strong {
+    color: #000;
+}
+
+/* Mạng xã hội */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+/* Màu sắc từng nền tảng */
+.social-icon.zalo {
+    background-color: #0068ff !important; /* Zalo màu xanh dương */
+}
+
+.social-icon.facebook {
+    background-color: #1877f2 !important; /* Facebook màu xanh lam */
+}
+
+.social-icon.tiktok {
+    background-color: #000000 !important; /* TikTok màu đen */
+}
+
+.social-icon.shopee {
+    background-color: #ff5722 !important; /* Shopee màu cam */
+}
+
+.social-icon.grab {
+    background-color: #00b14f !important; /* GrabFood màu xanh lá */
+}
+
+.social-icon.befood {
+    background-color: #fbae17 !important; /* BeFood màu vàng cam */
+}
+
+/* Hover */
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+/* Thêm icon Zalo */
+.fab.fa-zalo::before {
+    content: url('https://upload.wikimedia.org/wikipedia/commons/a/a1/Zalo_logo.png');
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Nút gửi thông điệp */
+.btn-contact {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 500px; /* Nút vừa phải */
+    margin: 0 auto;
+}
+
+.btn-contact:hover {
+    background-color: #218838;
+}
