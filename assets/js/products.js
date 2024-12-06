@@ -279,3 +279,22 @@ function showNotification(message, type = 'success') {
         toast.removeClass('show');
     }, 3000);
 } 
+
+function showLoginForm() {
+    const $modal = $('#authModal');
+    $('#loginContainer').show();
+    $('#registerContainer').hide();
+    $modal.modal('show');
+}
+
+function toggleAuthForms() {
+    const loginContainer = $('#loginContainer');
+    const registerContainer = $('#registerContainer');
+    if (loginContainer.css('display') === 'none') {
+        loginContainer.css('display', 'block');
+        registerContainer.css('display', 'none');
+    } else {
+        loginContainer.css('display', 'none');
+        registerContainer.css('display', 'block');
+    }
+}
