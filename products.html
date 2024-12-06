@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/products.css">
+    <title>Sản Phẩm - Duc Phat Bakery</title>
+</head>
+<body>
+    <script>
+    function showLoginForm() {
+        const modal = new bootstrap.Modal(document.getElementById('authModal'));
+        document.getElementById('loginContainer').style.display = 'block';
+        document.getElementById('registerContainer').style.display = 'none';
+        modal.show();
+    }
+
+    function toggleAuthForms() {
+        const loginContainer = document.getElementById('loginContainer');
+        const registerContainer = document.getElementById('registerContainer');
+        if (loginContainer.style.display === 'none') {
+            loginContainer.style.display = 'block';
+            registerContainer.style.display = 'none';
+        } else {
+            loginContainer.style.display = 'none';
+            registerContainer.style.display = 'block';
+        }
+    }
+    </script>
+
+    <!-- Sử dụng lại navbar từ index.html -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+            <img src="./assets/images/duc_phat_logo1.png" alt="Duc Phat Bakery" class="logo">
+            <a class="navbar-brand text-center" href="index.html">
+                <span class="fw-bold fs-4 text-danger">Duc Phat</span>
+                <br>
+                <span class="fs-5 text-dark fw-bold">Bakery</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Sản Phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cửa Hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item nav-auth">
+                        <button class="btn btn-outline-danger fw-bold" onclick="showLoginForm()">
+                            <i class="bi bi-person"></i> Đăng nhập
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="products-banner">
+        <div class="container">
+            <h1 class="text-center">Sản Phẩm Của Chúng Tôi</h1>
+            <p class="text-center">Khám phá thế giới bánh ngọt đầy màu sắc và hương vị</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section py-5">
+        <div class="container">
+            <div class="categories-wrapper">
+                <button class="category-item active" data-category="all">
+                    <i class="bi bi-grid-fill"></i>
+                    Tất Cả
+                </button>
+                <button class="category-item" data-category="mousse">
+                    <i class="bi bi-cake2"></i>
+                    Bánh Mousse
+                </button>
+                <button class="category-item" data-category="traditional">
+                    <i class="bi bi-flower1"></i>
+                    Bánh Truyền Thống
+                </button>
+                <button class="category-item" data-category="birthday">
+                    <i class="bi bi-gift"></i>
+                    Bánh Sinh Nhật
+                </button>
+                <button class="category-item" data-category="cookies">
+                    <i class="bi bi-cookie"></i>
+                    Bánh Quy
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-grid py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Bánh Mousse -->
+                <div class="col-lg-4 col-md-6" data-category="mousse">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="./assets/images/buoi.jpg" alt="Mousse Bưởi Hồng">
+                            <div class="product-tag">Best Seller</div>
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn"><i class="bi bi-cart-plus"></i></button>
+                                <button class="action-btn"><i class="bi bi-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mousse Bưởi Hồng</h3>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <span>(4.8)</span>
+                            </div>
+                            <p>Sự kết hợp tinh tế giữa vị chua thanh của bưởi hồng và béo ngậy của kem cheese.</p>
+                            <div class="product-price">
+                                <span class="price">580.000₫</span>
+                                <button class="btn btn-outline-danger">Đặt Ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bánh Truyền Thống -->
+                <div class="col-lg-4 col-md-6" data-category="traditional">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="./assets/images/fresh_bread.jpg" alt="Bánh Mì Truyền Thống">
+                            <div class="product-tag">Classic</div>
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn"><i class="bi bi-cart-plus"></i></button>
+                                <button class="action-btn"><i class="bi bi-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bánh Mì Truyền Thống</h3>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span>(5.0)</span>
+                            </div>
+                            <p>Bánh mì giòn rụm với vỏ bánh vàng ươm, ruột mềm xốp, hương vị đậm đà truyền thống.</p>
+                            <div class="product-price">
+                                <span class="price">15.000₫</span>
+                                <button class="btn btn-outline-danger">Đặt Ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bánh Sinh Nhật -->
+                <div class="col-lg-4 col-md-6" data-category="birthday">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="./assets/images/birthday.jpeg" alt="Bánh Sinh Nhật">
+                            <div class="product-tag">Premium</div>
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn"><i class="bi bi-cart-plus"></i></button>
+                                <button class="action-btn"><i class="bi bi-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bánh Sinh Nhật Chocolate</h3>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span>(4.9)</span>
+                            </div>
+                            <p>Bánh chocolate cao cấp với lớp kem tươi mịn màng, trang trí tinh tế.</p>
+                            <div class="product-price">
+                                <span class="price">450.000₫</span>
+                                <button class="btn btn-outline-danger">Đặt Ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bánh Quy -->
+                <div class="col-lg-4 col-md-6" data-category="cookies">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="./assets/images/cookies.jpeg" alt="Bánh Quy">
+                            <div class="product-tag">New</div>
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="bi bi-heart"></i></button>
+                                <button class="action-btn"><i class="bi bi-cart-plus"></i></button>
+                                <button class="action-btn"><i class="bi bi-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bánh Quy Bơ</h3>
+                            <div class="product-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <span>(4.7)</span>
+                            </div>
+                            <p>Bánh quy bơ thơm ngon với hương vị béo ngậy, tan trong miệng.</p>
+                            <div class="product-price">
+                                <span class="price">120.000₫</span>
+                                <button class="btn btn-outline-danger">Đặt Ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thêm nút Back to Top -->
+    <button id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Sử dụng lại footer từ index.html -->
+    <footer>
+        <p>© 2024 Duc Phat Bakery. All rights reserved.</p>
+        <p>Hotline: 0909-XXX-XXX | Email: contact@ducphatbakery.vn</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/products.js"></script>
+</body>
+</html>
