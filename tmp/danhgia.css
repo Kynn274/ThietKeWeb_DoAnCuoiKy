@@ -187,3 +187,19 @@ body:hover {
     transform: scale(1);
     visibility: visible;
 }
+.btn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5a623;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-more:hover {
+    background-color: #d48418;
+}
+
