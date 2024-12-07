@@ -54,3 +54,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 5000);
     });
 });
+function toggleDescription(button) {
+    var fullDesc = button.previousElementSibling; // Phần miêu tả đầy đủ (p.full-desc)
+    var shortDesc = fullDesc.previousElementSibling; // Phần miêu tả ngắn gọn (p.short-desc)
+
+    // Kiểm tra phần miêu tả đầy đủ có đang ẩn không
+    if (fullDesc.style.display === "none") {
+        fullDesc.style.display = "block"; // Hiển thị miêu tả đầy đủ
+        shortDesc.style.display = "none"; // Ẩn miêu tả ngắn gọn
+        button.innerText = "Thu gọn"; // Đổi nút thành "Thu gọn"
+    } else {
+        fullDesc.style.display = "none"; // Ẩn miêu tả đầy đủ
+        shortDesc.style.display = "block"; // Hiển thị miêu tả ngắn gọn
+        button.innerText = "Xem thêm"; // Đổi nút thành "Xem thêm"
+    }
+}
