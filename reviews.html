@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Sweet Cake - Tiệm bánh ngọt cao cấp với hơn 30 năm kinh nghiệm">
+    <meta name="keywords" content="bánh ngọt, bánh sinh nhật, tiệm bánh, sweet cake">
+    <meta name="author" content="Sweet Cake">
+    <link rel="shortcut icon" href="./assets/images/duc_phat_logo1.png" type="image/x-icon">
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reviews.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <title>Sweet Cake - Bánh Ngọt & Bánh Sinh Nhật</title>
+</head>
+<body>
+    <script src="./assets/js/script.js"></script>
+    <!-- <div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true"></div>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                 Login Form 
+                <div class="auth-container" id="loginContainer">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center mb-4">
+                            <img src="./assets/images/duc_phat_logo1.png" alt="Logo" class="auth-logo">
+                            <h2 class="text-danger fw-bold mt-3">Đăng Nhập</h2>
+                        </div>
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="loginEmail" required>
+                                <div class="invalid-feedback">Email không hợp lệ!</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mật khẩu:</label>
+                                <input type="password" class="form-control" id="loginPassword" required>
+                                <div class="invalid-feedback">Mật khẩu không được để trống!</div>
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100 mb-3">Đăng Nhập</button>
+                            <p class="text-center">Chưa có tài khoản? 
+                                <a href="#" class="text-danger fw-bold" onclick="toggleAuthForms()">Đăng ký ngay</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+                 Register Form 
+                <div class="auth-container" id="registerContainer" style="display:none;">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center mb-4">
+                            <img src="./assets/images/duc_phat_logo1.png" alt="Logo" class="auth-logo">
+                            <h2 class="text-danger fw-bold mt-3">Đăng Ký</h2>
+                        </div>
+                        <form id="registerForm">
+                            <div class="mb-3">
+                                <label class="form-label">Họ và Tên:</label>
+                                <input type="text" class="form-control" id="registerFullName" required>
+                                <div class="invalid-feedback">Họ và tên không được để trống!</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="registerEmail" required>
+                                <div class="invalid-feedback">Email không hợp lệ!</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Số điện thoại:</label>
+                                <input type="tel" class="form-control" id="registerPhone" required>
+                                <div class="invalid-feedback">Số điện thoại không hợp lệ!</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mật khẩu:</label>
+                                <input type="password" class="form-control" id="registerPassword" required>
+                                <div class="invalid-feedback">Mật khẩu phải ít nhất 8 ký tự!</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Xác nhận mật khẩu:</label>
+                                <input type="password" class="form-control" id="registerConfirmPassword" required>
+                                <div class="invalid-feedback">Mật khẩu xác nhận không khớp!</div>
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100 mb-3">Đăng Ký</button>
+                            <p class="text-center">Đã có tài khoản? 
+                                <a href="#" class="text-danger fw-bold" onclick="toggleAuthForms()">Đăng nhập</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <header id="home">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container">
+                <img src="./assets/images/duc_phat_logo1.png" alt="Sweet Cake" class="logo">
+                <a class="navbar-brand text-center" href="#">
+                    <span class="fw-bold fs-4 text-danger">Sweet</span>
+                    <br>
+                    <span class="fs-5 text-dark fw-bold">Cake</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#home">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Sản Phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="reviews.html">Đánh Giá</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Liên Hệ</a>
+                        </li>
+                        <li class="nav-item nav-auth">
+                            <button class="btn btn-outline-danger fw-bold" onclick="showLoginForm()">
+                                <i class="bi bi-person"></i> Đăng nhập
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="reviews-banner">
+        <div class="container">
+            <h1>Đánh Giá Từ Khách Hàng</h1>
+            <p>Khám phá những trải nghiệm thực tế và chia sẻ chân thực từ cộng đồng yêu bánh ngọt Sweet Cake</p>
+        </div>
+    </section>
+
+    <section id="reviews" class="review-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="review-products">
+                        <h2 class="text-danger fw-bold mb-4">Sản Phẩm Nổi Bật</h2>
+                        <div class="product-carousel">
+                            <div class="product-card">
+                                <img src="assets/images/buoi.jpg" alt="Bánh Bưởi Hồng" class="product-image">
+                                <h3 class="mt-3">Bánh Bưởi Hồng</h3>
+                                <p class="text-muted">Mousse Trà Olong Đài Loan Bưởi hồng - Hương vị độc đáo</p>
+                            </div>
+                            <!-- Thêm các sản phẩm khác tương tự -->
+                        </div>
+                        <div class="review-slider mt-5">
+                            <h3 class="text-danger fw-bold mb-4">Đánh Giá Từ Khách Hàng</h3>
+                            <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="review-card">
+                                            <div class="review-header">
+                                                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="User" class="reviewer-avatar">
+                                                <div class="reviewer-info">
+                                                    <h5>Nguyễn Thị Hương</h5>
+                                                    <div class="rating">
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="review-text">"Bánh Bưởi Hồng là một khám phá tuyệt vời! Hương vị tinh tế của trà Oolong kết hợp với bưởi hồng tạo nên một trải nghiệm ẩm thực độc đáo. Đặc biệt ấn tượng với lớp kem mịn màng và cách trang trí tinh tế."</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="review-card">
+                                            <div class="review-header">
+                                                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="User" class="reviewer-avatar">
+                                                <div class="reviewer-info">
+                                                    <h5>Trần Minh Đức</h5>
+                                                    <div class="rating">
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-half text-warning"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="review-text">"Là một người sành ăn, tôi rất hài lòng với Bánh Việt Quốc. Sự kết hợp giữa cream cheese và việt quất tạo nên hương vị chua ngọt vừa phải. Phục vụ chuyên nghiệp, không gian tiệm bánh sạch sẽ, thoáng mát."</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="review-card">
+                                            <div class="review-header">
+                                                <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="User" class="reviewer-avatar">
+                                                <div class="reviewer-info">
+                                                    <h5>Phạm Thu Trang</h5>
+                                                    <div class="rating">
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="review-text">"Bánh Dâu ở đây thực sự xuất sắc! Dâu tươi ngon, kem mịn và không quá ngọt. Tôi đã đặt bánh sinh nhật cho con gái và cả gia đình đều rất thích. Nhân viên tư vấn nhiệt tình, chu đáo. Chắc chắn sẽ quay lại!"</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="review-card">
+                                            <div class="review-header">
+                                                <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="User" class="reviewer-avatar">
+                                                <div class="reviewer-info">
+                                                    <h5>Lê Hoàng Nam</h5>
+                                                    <div class="rating">
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="review-text">"Bánh Dưa Lưới là lựa chọn hoàn hảo cho những buổi tiệc trà. Hương vị thanh mát, t nhiên từ dưa lưới Nhật, kết hợp với kem sữa béo ngậy tạo nên hương vị khó quên. Giá cả phải chăng cho chất lượng tuyệt vời."</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="review-card">
+                                            <div class="review-header">
+                                                <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="User" class="reviewer-avatar">
+                                                <div class="reviewer-info">
+                                                    <h5>Vũ Mai Anh</h5>
+                                                    <div class="rating">
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-fill text-warning"></i>
+                                                        <i class="bi bi-star-half text-warning"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="review-text">"Đã thử hầu hết các loại bánh ở đây và chưa bao giờ thất vọng. Mỗi loại bánh đều có hương vị riêng biệt, đặc sắc. Đặc biệt thích cách họ sử dụng nguyên liệu tự nhiên và luôn đảm bảo độ tươi ngon của bánh."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="3"></button>
+                                    <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="4"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="review-form-container">
+                        <h2 class="text-danger fw-bold mb-4">Đánh Giá Sản Phẩm</h2>
+
+                        <!-- Form đánh giá hiện tại -->
+                        <!-- Review Form -->
+                        <form id="reviewForm" class="review-form">
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold">Chọn sản phẩm:</label>
+                                <select class="form-select" id="product-name" required>
+                                    <option value="">-- Chọn sản phẩm --</option>
+                                    <option value="Việt Quốc">Bánh Việt Quốc</option>
+                                    <option value="Dâu">Bánh Dâu</option>
+                                    <option value="Bưởi Hồng">Bánh Bưởi Hồng</option>
+                                    <option value="Xoài">Bánh Xoài</option>
+                                    <option value="Dưa lưới">Bánh Dưa Lưới</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold">Đánh giá:</label>
+                                <div id="starRating" class="star-rating">
+                                    <span data-value="1" class="star">★</span>
+                                    <span data-value="2" class="star">★</span>
+                                    <span data-value="3" class="star">★</span>
+                                    <span data-value="4" class="star">★</span>
+                                    <span data-value="5" class="star">★</span>
+                                </div>
+                                <input type="hidden" id="rating" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold">Nhận xét của bạn:</label>
+                                <textarea class="form-control" id="review" rows="4" required 
+                                    placeholder="Chia sẻ trải nghiệm của bạn về sản phẩm..."></textarea>
+                            </div>
+                            <button type="submit" id="submitButton" class="btn btn-danger" disabled>
+                                <i class="bi bi-send-fill me-2"></i>Gửi Đánh Giá
+                            </button>
+                        </form>
+
+                        <!-- Thêm phn thống kê đánh giá -->
+                        <!-- Rating Statistics -->
+                        <div class="rating-stats mb-4 mt-4">
+                          <div class="row align-items-center">
+                              <div class="col-md-4 text-center">
+                                  <div class="average-rating">
+                                      <h3 class="display-4 fw-bold text-warning">4.8</h3>
+                                      <div class="stars mb-2">
+                                          <i class="bi bi-star-fill text-warning"></i>
+                                          <i class="bi bi-star-fill text-warning"></i>
+                                          <i class="bi bi-star-fill text-warning"></i>
+                                          <i class="bi bi-star-fill text-warning"></i>
+                                          <i class="bi bi-star-half text-warning"></i>
+                                      </div>
+                                      <p class="text-muted">Điểm trung bình</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-8">
+                                  <div class="rating-bars">
+                                      <div class="rating-bar-item d-flex align-items-center mb-2">
+                                          <span class="rating-label">5 sao</span>
+                                          <div class="progress flex-grow-1 mx-2" style="height: 8px;">
+                                              <div class="progress-bar bg-warning" style="width: 85%"></div>
+                                          </div>
+                                          <span class="rating-count">850</span>
+                                      </div>
+                                      <div class="rating-bar-item d-flex align-items-center mb-2">
+                                          <span class="rating-label">4 sao</span>
+                                          <div class="progress flex-grow-1 mx-2" style="height: 8px;">
+                                              <div class="progress-bar bg-warning" style="width: 10%"></div>
+                                          </div>
+                                          <span class="rating-count">100</span>
+                                      </div>
+                                      <div class="rating-bar-item d-flex align-items-center mb-2">
+                                          <span class="rating-label">3 sao</span>
+                                          <div class="progress flex-grow-1 mx-2" style="height: 8px;">
+                                              <div class="progress-bar bg-warning" style="width: 3%"></div>
+                                          </div>
+                                          <span class="rating-count">30</span>
+                                      </div>
+                                      <div class="rating-bar-item d-flex align-items-center mb-2">
+                                          <span class="rating-label">2 sao</span>
+                                          <div class="progress flex-grow-1 mx-2" style="height: 8px;">
+                                              <div class="progress-bar bg-warning" style="width: 1%"></div>
+                                          </div>
+                                          <span class="rating-count">10</span>
+                                      </div>
+                                      <div class="rating-bar-item d-flex align-items-center">
+                                          <span class="rating-label">1 sao</span>
+                                          <div class="progress flex-grow-1 mx-2" style="height: 8px;">
+                                              <div class="progress-bar bg-warning" style="width: 1%"></div>
+                                          </div>
+                                          <span class="rating-count">10</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="total-reviews text-center mt-3">
+                              <p class="mb-0 text-muted">Tổng số <span class="fw-bold text-dark">1,000</span> lượt đánh giá</p>
+                          </div>
+                      </div>
+                        <div id="confirmationMessage" class="alert alert-success">
+                            <i class="bi bi-check-circle-fill me-2"></i>
+                            Cảm ơn bạn đã gửi đánh giá! Chúng tôi rất trân trọng ý kiến của bạn.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-info">
+                        <img src="./assets/images/duc_phat_logo1.png" alt="Sweet Cake" class="footer-logo">
+                        <h3>Sweet Cake</h3>
+                        <p>Hơn 30 năm kinh nghiệm làm bánh với những công thức độc quyền, tạo nên những chiếc bánh ngọt ngào khó quên.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="footer-contact">
+                        <h4>Liên Hệ</h4>
+                        <p><i class="bi bi-geo-alt-fill"></i> 280 An Dương Vương, P4, Q5, TP.HCM</p>
+                        <p><i class="bi bi-telephone-fill"></i> 0909-XXX-XXX</p>
+                        <p><i class="bi bi-envelope-fill"></i> contact@sweetcake.vn</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-social">
+                        <h4>Kết Nối</h4>
+                        <div class="social-links">
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="tiktok"><i class="bi bi-tiktok"></i></a>
+                            <a href="#" class="youtube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                        <div class="footer-subscribe">
+                            <p>Đăng ký nhận thông tin khuyến mãi</p>
+                            <div class="subscribe-form">
+                                <input type="email" placeholder="Email của bạn">
+                                <button type="submit"><i class="bi bi-send-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 Sweet Cake. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="#">Chính sách bảo mật</a>
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">Chính sách đổi trả</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>  
+ 
+</body>
+</html>

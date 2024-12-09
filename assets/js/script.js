@@ -172,7 +172,7 @@ $(document).ready(function() {
     }
 
     // Xử lý đặt hàng
-    $('.btn-outline-danger').on('click', function(e) {
+    $('#product-card .btn-outline-danger').on('click', function(e) {
         e.preventDefault();
         
         // Lấy thông tin sản phẩm

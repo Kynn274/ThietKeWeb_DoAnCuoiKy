@@ -1,0 +1,149 @@
+/* Banner Section */
+.contact-banner {
+    background: linear-gradient(to right, 
+        rgba(255, 192, 203, 0.8), 
+        rgba(255, 182, 193, 0.8)), 
+        url('../images/banner-cake.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 160px 0 120px;
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.contact-banner::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #fff, transparent);
+}
+
+.contact-banner h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #dc3545;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.contact-banner p {
+    font-size: 1.2rem;
+    color: #444;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-banner {
+        padding: 120px 0 80px;
+    }
+    
+    .contact-banner h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-banner p {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-banner h1 {
+        font-size: 2rem;
+    }
+    
+    .contact-banner {
+        padding: 100px 0 60px;
+    }
+} 
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+
+.contact-info-card,
+.contact-form-card {
+    position: relative;
+    z-index: 3;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+} 
+
+/* Social Links */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+/* Màu riêng cho từng mạng xã hội */
+.social-icon:nth-child(1) {
+    background: #1877f2; /* Facebook */
+}
+
+.social-icon:nth-child(2) {
+    background: #000000; /* TikTok */
+}
+
+.social-icon:nth-child(3) {
+    background: #e4405f; /* Instagram */
+}
+
+.social-icon:nth-child(4) {
+    background: #dc3545; /* Shop */
+}
+
+/* Hiệu ứng hover */
+.social-icon:nth-child(1):hover {
+    background: #0d6efd;
+    box-shadow: 0 5px 15px rgba(24, 119, 242, 0.4);
+}
+
+.social-icon:nth-child(2):hover {
+    background: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.social-icon:nth-child(3):hover {
+    background: #d63384;
+    box-shadow: 0 5px 15px rgba(228, 64, 95, 0.4);
+}
+
+.social-icon:nth-child(4):hover {
+    background: #c82333;
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.4);
+}

@@ -26,9 +26,86 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container">
-            <img src="./assets/images/duc_phat_logo1.png" alt="Sweet Cake" class="logo">
+    <!-- <div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true"></div>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="auth-container" id="loginContainer">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center mb-4">
+                            <img src="./assets/images/duc_phat_logo1.png" alt="Logo" class="auth-logo">
+                            <h2 class="text-danger fw-bold mt-3">Đăng Nhập</h2>
+                        </div>
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="loginEmail" required>
+                                <div class="invalid-feedback">Email không hợp lệ!</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mật khẩu:</label>
+                                <input type="password" class="form-control" id="loginPassword" required>
+                                <div class="invalid-feedback">Mật khẩu không được để trống!</div>
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100 mb-3">Đăng Nhập</button>
+                            <p class="text-center">Chưa có tài khoản? 
+                                <a href="#" class="text-danger fw-bold" onclick="toggleAuthForms()">Đăng ký ngay</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="auth-container" id="registerContainer" style="display:none;">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center mb-4">
+                            <img src="./assets/images/duc_phat_logo1.png" alt="Logo" class="auth-logo">
+                            <h2 class="text-danger fw-bold mt-3">Đăng Ký</h2>
+                        </div>
+                        <form id="registerForm">
+                            <div class="mb-3">
+                                <label class="form-label">Họ và Tên:</label>
+                                <input type="text" class="form-control" id="registerFullName" required>
+                                <div class="invalid-feedback">Họ và tên không được để trống!</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="registerEmail" required>
+                                <div class="invalid-feedback">Email không hợp lệ!</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Số điện thoại:</label>
+                                <input type="tel" class="form-control" id="registerPhone" required>
+                                <div class="invalid-feedback">Số điện thoại không hợp lệ!</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mật khẩu:</label>
+                                <input type="password" class="form-control" id="registerPassword" required>
+                                <div class="invalid-feedback">Mật khẩu phải ít nhất 8 ký tự!</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Xác nhận mật khẩu:</label>
+                                <input type="password" class="form-control" id="registerConfirmPassword" required>
+                                <div class="invalid-feedback">Mật khẩu xác nhận không khớp!</div>
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100 mb-3">Đăng Ký</button>
+                            <p class="text-center">Đã có tài khoản? 
+                                <a href="#" class="text-danger fw-bold" onclick="toggleAuthForms()">Đăng nhập</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container">
+                <img src="./assets/images/duc_phat_logo1.png" alt="Sweet Cake" class="logo">
             <a class="navbar-brand text-center" href="index.html">
                 <span class="fw-bold fs-4 text-danger">Sweet</span>
                 <br>
@@ -43,16 +120,13 @@
                         <a class="nav-link" href="index.html#home">Trang Chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#intro">Giới Thiệu</a>
+                        <a class="nav-link active" href="products.html">Sản Phẩm</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html#products">Sản Phẩm</a>
+                        <a class="nav-link" href="reviews.html">Đánh Giá</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#reviews">Đánh Giá</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Liên Hệ</a>
+                        <a class="nav-link" href="contact.html">Liên Hệ</a>
                     </li>
                     <li class="nav-item nav-auth">
                         <button class="btn btn-outline-danger fw-bold" onclick="showLoginForm()">
@@ -63,7 +137,7 @@
             </div>
         </div>
     </nav>
-
+    </header>
     <!-- Banner Section -->
     <section class="products-banner">
         <div class="container">

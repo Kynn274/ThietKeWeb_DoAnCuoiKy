@@ -76,7 +76,7 @@ $(document).ready(function() {
     });
 
     // Xử lý đặt hàng
-    $('.btn-outline-danger').on('click', function(e) {
+    $('.product-grid .btn-outline-danger').on('click', function(e) {
         e.preventDefault();
         
         // Lấy thông tin sản phẩm
@@ -173,7 +173,7 @@ $(document).ready(function() {
     let cartCount = 0;
 
     // Xử lý thêm vào giỏ hàng
-    $('.action-btn:nth-child(2), .btn-outline-danger').on('click', function(e) {
+    $('.product-grid .action-btn:nth-child(2), .product-grid .btn-outline-danger').on('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
         
@@ -280,6 +280,70 @@ function showNotification(message, type = 'success') {
     }, 3000);
 } 
 
+// Xử lý form đăng nhập và đăng ký
+$('#loginForm').on('submit', function(e) {
+    e.preventDefault();
+    // Xử lý đăng nhập
+    const email = $('#loginEmail').val();
+    const password = $('#loginPassword').val();
+    
+    // Thêm validation
+    if (!validateEmail(email)) {
+        $('#loginEmail').addClass('is-invalid');
+        return;
+    }
+    
+    if (password.length < 6) {
+        $('#loginPassword').addClass('is-invalid');
+        return;
+    }
+    
+    // TODO: Gửi request đăng nhập
+    console.log('Login:', { email, password });
+});
+
+$('#registerForm').on('submit', function(e) {
+    e.preventDefault();
+    // Xử lý đăng ký
+    const fullName = $('#registerFullName').val();
+    const email = $('#registerEmail').val();
+    const phone = $('#registerPhone').val();
+    const password = $('#registerPassword').val();
+    const confirmPassword = $('#registerConfirmPassword').val();
+    
+    // Validation
+    let isValid = true;
+    
+    if (!fullName) {
+        $('#registerFullName').addClass('is-invalid');
+        isValid = false;
+    }
+    
+    if (!validateEmail(email)) {
+        $('#registerEmail').addClass('is-invalid');
+        isValid = false;
+    }
+    
+    if (!validatePhone(phone)) {
+        $('#registerPhone').addClass('is-invalid');
+        isValid = false;
+    }
+    
+    if (password.length < 8) {
+        $('#registerPassword').addClass('is-invalid');
+        isValid = false;
+    }
+    
+    if (password !== confirmPassword) {
+        $('#registerConfirmPassword').addClass('is-invalid');
+        isValid = false;
+    }
+    
+    if (!isValid) return;
+    
+    // TODO: Gửi request đăng ký
+    console.log('Register:', { fullName, email, phone, password });
+});
 function showLoginForm() {
     const $modal = $('#authModal');
     $('#loginContainer').show();
