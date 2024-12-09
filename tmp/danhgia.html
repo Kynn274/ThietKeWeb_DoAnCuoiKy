@@ -14,46 +14,66 @@
 
     <main class="main-content">
         <!-- Danh sách sản phẩm -->
-        <section class="product-list">
-            <h2>Sản phẩm nổi bật</h2>
-            <ul>
-                <li>
-                    <div class="product-card">
-                        <img src="assets/images/buoi.jpg" alt="Bánh Bưởi Hồng" class="product-image">
-                        <h3>Bánh Bưởi Hồng</h3>
-                        <p>Với rất nhiều chăm chút, Mousse Trà Olong Đài Loan Bưởi hồng là chiếc bánh gói trọn những niềm yêu chân thành của The 350F đến bạn. Đây cũng là gợi ý tinh tế để bạn bày tỏ lòng mình với những người phụ nữ đặc biệt, hoặc đơn giản là dành tặng bản thân vì chính bạn đã luôn là một đóa hoa rạng ngời.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="product-card">
-                        <img src="assets/images/dau.jpg" alt="Bánh Dâu" class="product-image">
-                        <h3>Bánh Dâu</h3>
-                        <p>Mousse Dâu thu hút với vị chua ngọt tự nhiên từ các loại trái cây mùa hè như dâu tây, dâu tằm, mâm xôi hòa hợp với vị béo mịn của kem sữa và thoang thoảng chút sánh mịn tự nhiên từ Greek Yogurt.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="product-card">
-                        <img src="assets/images/vietquoc.jpg" alt="Bánh Việt Quốc" class="product-image">
-                        <h3>Bánh Việt Quốc</h3>
-                        <p>Với Blueberry Mousse, vị chua tinh tế, dìu dặt của trái việt quất, dâu tằm kết hợp cùng vị béo nhẹ nhàng của CreamCheese cao cấp sẽ là hương vị chủ đạo nhưng sự đặc biệt của chiếc bánh này. Không dừng lại ở đó, ẩn giấu bên trong vẻ ngoài hấp dẫn ấy là từng lớp hương vị nằm đan xen vào nhau với Sữa Chua Hy Lạp thơm béo kết hợp cùng một lớp mỏng là mứt các loại berry tươi được nấu thủ công và đế bánh gato chocolate.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="product-card">
-                        <img src="assets/images/dualuoi.jpg" alt="Bánh Dưa Lưới" class="product-image">
-                        <h3>Bánh Mousse Dưa Lưới</h3>
-                        <p>Bánh có vị thơm và béo nhẹ nhàng từ phô mai tươi kết hợp cùng kem sữa và Dưa Lưới Mật giống Fuji nấu chậm, bên trong là rất nhiều dưa lưới tươi và cốt bánh gato vị vani, cùng với một ít rượu Dưa Lưới nồng nàn. Cũng đơn giản như chính cái tên, Bánh Dưa Lưới vừa đủ gây ấn tượng khi nhìn vào màu xanh mát lành tinh tươm với những cụm dưa tươi mát được trang trí bên ngoài, vừa đủ để bạn có đôi chút ngập ngừng khi chạm dao vào từng miếng bánh mong manh.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="product-card">
-                        <img src="assets/images/xoai.jpg" alt="Bánh Xoài" class="product-image">
-                        <h3>Bánh Xoài</h3>
-                        <p>Với Xoài, Thơm và Chanh Dây – những loại trái cây thân thuộc sẽ “biến hóa” cùng sự mềm mịn lẫn trong vị chua béo nhẹ nhàng của lớp mousse Greek Yogurt, mang đến vị ngọt đằm ẩn chứa trong hương tươi mát. Hãy xắn một muỗng đầy gồm đầy đủ các lớp bánh gato và mousse yogurt và vài miếng trái cây tươi trang trí ngay trên mặt bánh, để cảm nhận trọn vẹn nhất nhé.</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
+       <section class="product-list">
+    <h2>Sản phẩm nổi bật</h2>
+    <ul>
+        <!-- Bánh Bưởi Hồng -->
+        <li>
+            <div class="product-card">
+                <img src="assets/images/buoi.jpg" alt="Bánh Bưởi Hồng" class="product-image">
+                <h3>Bánh Bưởi Hồng</h3>
+                <p class="short-desc">Mousse Trà Olong Đài Loan Bưởi Hồng mang hương vị ngọt ngào, thích hợp để tặng người phụ nữ đặc biệt hoặc chính bạn.</p>
+                <p class="full-desc" style="display: none;">Mousse Trà Olong Đài Loan Bưởi Hồng là chiếc bánh gói trọn những niềm yêu chân thành của The 350F đến bạn. Đây cũng là gợi ý tinh tế để bạn bày tỏ lòng mình với những người phụ nữ đặc biệt, hoặc đơn giản là dành tặng bản thân vì chính bạn đã luôn là một đóa hoa rạng ngời.</p>
+                <a href="#" class="btn-more" onclick="toggleDescription(this);">Xem thêm</a>
+            </div>
+        </li>
+        
+        <!-- Bánh Dâu -->
+        <li>
+            <div class="product-card">
+                <img src="assets/images/dau.jpg" alt="Bánh Dâu" class="product-image">
+                <h3>Bánh Dâu</h3>
+                <p class="short-desc">Bánh Mousse Dâu với vị chua ngọt tự nhiên từ dâu tây và các loại trái cây mùa hè như dâu tằm.</p>
+                <p class="full-desc" style="display: none;">Mousse Dâu thu hút với vị chua ngọt tự nhiên từ các loại trái cây mùa hè như dâu tây, dâu tằm, mâm xôi hòa hợp với vị béo miệng của kem sữa và thoang thoảng chút sánh mịn từ Greek Yogurt.</p>
+                <a href="#" class="btn-more" onclick="toggleDescription(this);">Xem thêm</a>
+            </div>
+        </li>
+        
+        <!-- Bánh Việt Quốc -->
+        <li>
+            <div class="product-card">
+                <img src="assets/images/vietquoc.jpg" alt="Bánh Việt Quốc" class="product-image">
+                <h3>Bánh Việt Quốc</h3>
+                <p class="short-desc">Với Blueberry Mousse dịu nhẹ, vị chua thanh của việt quất và mứt các loại berry tươi.</p>
+                <p class="full-desc" style="display: none;">Với Blueberry Mousse, vị chua tinh tế, dìu dặt của trái việt quất, dâu tằm kết hợp cùng vị béo nhẹ nhàng của CreamCheese cao cấp sẽ là hương vị chủ đạo nhưng sự đặc biệt của chiếc bánh này. Không dừng lại ở đó, ẩn giấu bên trong vẻ ngoài hấp dẫn ấy là từng lớp hương vị nằm đan xen vào nhau với Sữa Chua Hy Lạp thơm béo kết hợp cùng một lớp mỏng là mứt các loại berry tươi được nấu thủ công và đế bánh gato chocolate.</p>
+                <a href="#" class="btn-more" onclick="toggleDescription(this);">Xem thêm</a>
+            </div>
+        </li>
+        
+        <!-- Bánh Dưa Lưới -->
+        <li>
+            <div class="product-card">
+                <img src="assets/images/dualuoi.jpg" alt="Bánh Dưa Lưới" class="product-image">
+                <h3>Bánh Dưa Lưới</h3>
+                <p class="short-desc">Bánh Dưa Lưới mang hương vị mát lành từ dưa lưới tươi và mousse kem sữa tươi.</p>
+                <p class="full-desc" style="display: none;">Bánh Dưa Lưới mang hương vị mát lành và dịu ngọt từ dưa lưới tươi, hòa quyện cùng lớp mousse mịn màng và kem sữa tươi, chắc chắn sẽ làm bạn yêu thích.</p>
+                <a href="#" class="btn-more" onclick="toggleDescription(this);">Xem thêm</a>
+            </div>
+        </li>
+        
+        <!-- Bánh Xoài -->
+        <li>
+            <div class="product-card">
+                <img src="assets/images/xoai.jpg" alt="Bánh Xoài" class="product-image">
+                <h3>Bánh Xoài</h3>
+                <p class="short-desc">Chiếc bánh Mousse Xoài mang lại hương vị nhiệt đới ngọt ngào, kết hợp cùng lớp kem tươi mát lạnh.</p>
+                <p class="full-desc" style="display: none;">Chiếc bánh Mousse Xoài mang lại hương vị nhiệt đới ngọt ngào, kết hợp cùng lớp kem tươi mát lạnh và mứt xoài tươi tạo nên sự hấp dẫn khó cưỡng.</p>
+                <a href="#" class="btn-more" onclick="toggleDescription(this);">Xem thêm</a>
+            </div>
+        </li>
+    </ul>
+</section>
+
 
         <!-- Biểu mẫu đánh giá -->
         <section class="review-form">
